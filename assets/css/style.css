@@ -18,7 +18,10 @@
 	/*border:2px red solid;*/
 }
 
-
+.menu-links{
+	color:inherit;
+	text-decoration: inherit;
+}
 
 .menu {
 	list-style-type: none;
@@ -156,6 +159,26 @@ h3 {
 
 }
 
+#linkedin {
+	width:50px;
+	height:50px;
+	float:left;
+}
+
+#facebook {
+	width:50px;
+	height:50px;
+	float:left;
+	margin:0 29px;
+}
+
+#github {
+	width:50px;
+	height:50px;
+	float:right;
+	
+}
+
 p {
 	line-height:2;
 	
@@ -165,6 +188,18 @@ p {
 
 footer {
 	clear:both;
+	background-color:#666666;
+	border-top:8px #4aaaa5 solid;
+	height:90px;
+	color:#c2b7b0;
+	width:100%;
+	
+}
 
 
+
+#footer-container{
+	width:150px;
+	margin:32px auto;
+	font-size:13px;
 }
