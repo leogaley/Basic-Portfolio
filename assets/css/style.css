@@ -84,7 +84,7 @@ h1 {
 
 }
 
-h1,h2,h3 {
+h1,h2,h3,div {
 	font-family: 'Georgia', Times, 'Times New Roman', serif;
 }
 
@@ -152,6 +152,25 @@ h3 {
 	margin-right:30px;
 
 
+}
+.portfolio-image{
+	float:left;
+	width:270px;
+	height:200px;
+	margin:30px 12px;
+	position:relative;
+}
+.portfolio-banner{
+	background-color:#4aaaa5;
+	color:white;
+	font-size:24px;
+	z-index: 2;
+	position:absolute;
+	bottom:10px;
+	height:24px;
+	width:270px;
+	text-align:center;
+	padding:15px 0;
 }
 
 .bio-content{
