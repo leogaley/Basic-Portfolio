@@ -8,7 +8,11 @@
 	background-image:none;
 	background-color:white;
 	
+}
 
+.container{
+	margin-bottom:-128px;
+	min-height:100%;
 }
 
 .header,.content-main,footer {
@@ -121,7 +125,7 @@ h3 {
 
 
 .content-main {
-	min-height:100%;
+	/*min-height:100%;*/
 	
 }
 
@@ -136,7 +140,7 @@ h3 {
 	background-color:#ffffff;
 	padding:30px;
 	
-	margin-bottom:-90px;
+	
 	
 
 }
@@ -226,7 +230,7 @@ footer {
 }
 
 .push {
-	height:90px;
+	height:128px;
 	clear:both;
 }
 
