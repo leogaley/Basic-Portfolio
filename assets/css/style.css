@@ -196,10 +196,12 @@ h3 {
 }
 
 #stackoverflow {
-	width:60px;
-	height:60px;
+	width:55px;
+	height:55px;
 	float:left;
-	margin:0 14px;
+	margin:0 16px;
+	margin-top:3px;
+
 }
 
 #github {
@@ -211,6 +213,7 @@ h3 {
 
 p {
 	line-height:2;
+	padding-bottom:30px;
 	
 }
 
