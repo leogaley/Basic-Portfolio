@@ -68,11 +68,11 @@ li {
 }
 
 
-body{
+html, body{
 	color:#777777;
 	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 	background-image:url(../images/ricepaper_v3.png);
-	height:100vh;
+	height:100%;
 	
 }
 
