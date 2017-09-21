@@ -190,14 +190,14 @@ h3 {
 }
 
 #linkedin {
-	width:60px;
-	height:60px;
+	width:59px;
+	height:59px;
 	float:left;
 }
 
 #stackoverflow {
-	width:55px;
-	height:55px;
+	width:54px;
+	height:54px;
 	float:left;
 	margin:0 16px;
 	margin-top:3px;
@@ -205,8 +205,8 @@ h3 {
 }
 
 #github {
-	width:60px;
-	height:60px;
+	width:59px;
+	height:59px;
 	float:right;
 	
 }
