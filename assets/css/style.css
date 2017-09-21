@@ -72,8 +72,8 @@ body{
 	color:#777777;
 	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 	background-image:url(../images/ricepaper_v3.png);
-	height:100%;
-	min-height:100%;
+	height:100vh;
+	
 }
 
 h1 {
@@ -120,6 +120,7 @@ h3 {
 
 
 .content-main {
+	min-height:100%;
 	
 }
 
@@ -133,8 +134,7 @@ h3 {
 	border:1px #dddddd solid;
 	background-color:#ffffff;
 	padding:30px;
-
-	min-height:100%;
+	
 	margin-bottom:-90px;
 	
 
@@ -219,6 +219,7 @@ footer {
 	color:#c2b7b0;
 	width:100%;
 	margin-top:30px;
+
 	
 	
 }
