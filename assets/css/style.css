@@ -5,28 +5,37 @@
 .head-container{
 	background-color:#ffffff;
 	position:relative;
+	/*make sure background of header stays white*/
 	background-image:none;
 	background-color:white;
 	
 }
 
+/*negative margin used to create sticky footer. not 100% comprehending how this is working 
+but I am not too concerned, pretty sure this is a bit of a hacky way to do it that I wont
+ever use again.*/
 .container{
 	margin-bottom:-128px;
 	min-height:100%;
 }
 
+/*set page width for content*/
 .header,.content-main,footer {
 	width:960px;
 	margin:0 auto;
 
-	/*border:2px red solid;*/
+	
 }
 
 .menu-links{
+	/*I think maybe link properties were not all cancelled in the reset.css, had to inherit these
+	to make sure they were styled as planned*/
 	color:inherit;
 	text-decoration: inherit;
 }
 
+/*had to hard code the padding to center vertically, would have liked to avoid this but couldn't
+get it to work.*/
 .menu {
 	list-style-type: none;
 	float:right;
@@ -36,6 +45,7 @@
 	
 	}
 
+/*float each list element left to create horizontal menu*/
 li {
 	float:left;
 	font-size:15px;
@@ -43,17 +53,20 @@ li {
 	
 }
 
+/*for left-most link in menu*/
 #menu-about {
 	padding-right:20px;
 	border-right:1px #c2b7b0 solid;
 }
 
+/*for middle link in menu*/
 #menu-portfolio {
 	padding-right:20px;
 	padding-left:20px;
 	border-right:1px #c2b7b0 solid;
 }
 
+/*for right-most link in menu*/
 #menu-contact {
 	padding-left:20px;
 
@@ -61,7 +74,7 @@ li {
 
 
 
-
+/*line across bottom of header, using positioning*/
 #hr-line {
 	position: absolute;
     top: 90px;
@@ -71,7 +84,7 @@ li {
     border-top:1px #c2b7b0 solid ;
 }
 
-
+/*background image for page*/
 html, body{
 	color:#777777;
 	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
@@ -81,6 +94,7 @@ html, body{
 	
 }
 
+/*set as inline block to make background color only span the width of the text*/
 h1 {
 	background-color: #4aaaa5;
 	color: white;
@@ -91,6 +105,8 @@ h1 {
 
 }
 
+/*didn't apply classes or ids to several element types because I knew the exact scope of how
+and where I would be using those elements (for now)*/
 h1,h2,h3,div {
 	font-family: 'Georgia', Times, 'Times New Roman', serif;
 }
@@ -99,9 +115,6 @@ h1,h2,h3,div {
 ul {
 	/*position:absolute;*/
 	/*messing with positioning right:50px;*/
-	
-
-
 }
 
 h2 {
@@ -130,7 +143,8 @@ h3 {
 }
 
 
-
+/*didn't like hard-coding the pixels here but thats the best I could do to create
+the desired look*/
 .content-main-primary {
 	width:588px;
 	margin:40px;
@@ -145,6 +159,7 @@ h3 {
 
 }
 
+/*float right to move to top right of content area*/
 .content-main-secondary{
 
 	width:206px;
@@ -164,6 +179,9 @@ h3 {
 
 
 }
+
+/*set position relative so as to set the banner relative to image. float all images left, 
+content div has space for exactly 2 images, so it creates 2 columns*/
 .portfolio-image{
 	float:left;
 	width:270px;
@@ -171,6 +189,8 @@ h3 {
 	margin:30px 12px;
 	position:relative;
 }
+
+/*absolutely position within portfolio image, set z index to show over it*/
 .portfolio-banner{
 	background-color:#4aaaa5;
 	color:white;
@@ -189,6 +209,9 @@ h3 {
 
 }
 
+/*had to fiddle with my image sizes to get them to look right, the stock images
+from icon finder had some white borders and such, I'm not real good at modifying 
+images in GIMP at the moment. */
 #linkedin {
 	width:59px;
 	height:59px;
@@ -233,6 +256,7 @@ footer {
 	
 }
 
+/*spacer to push the footer below content.  clear to make the div go below floated content*/
 .push {
 	height:128px;
 	clear:both;
@@ -246,6 +270,7 @@ footer {
 	font-size:13px;
 }
 
+/*make placeholder text a lighter color*/
 #email::placeholder {
 	color:#c2b7b0;
 }
@@ -256,6 +281,7 @@ footer {
 
 #message {
 	height:150px;
+	/*only resize text area vertically*/
 	resize:vertical;
 
 }
@@ -274,6 +300,7 @@ input[type=text],input[type=email],textarea {
 
 }
 
+/*style for submit button*/
 input[type=submit] {
 	width:140px;
 	font-size:20px;
